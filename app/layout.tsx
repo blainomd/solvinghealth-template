@@ -33,13 +33,13 @@ export default function RootLayout({
 
         {/* Sage Chat Widget */}
         <Script
-          src={`https://solvinghealth.com/widgets/sage-chat.js?channel=${siteConfig.chatChannel}`}
+          src={`https://www.solvinghealth.com/widgets/sage-chat.js?channel=${siteConfig.chatChannel}`}
           strategy="lazyOnload"
         />
 
         {/* Gemini Voice Widget */}
         <Script
-          src={`https://solvinghealth.com/widgets/gemini-voice.js?site=${siteConfig.voiceSite}`}
+          src={`https://www.solvinghealth.com/widgets/gemini-voice.js?site=${siteConfig.voiceSite}`}
           strategy="lazyOnload"
         />
 
