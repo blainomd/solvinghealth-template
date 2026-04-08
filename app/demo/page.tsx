@@ -30,31 +30,6 @@ interface PatientJourney {
 /* ─── Journey Data ─── */
 const JOURNEYS: PatientJourney[] = [
   {
-    id: "dorothy",
-    name: "Dorothy Warkentine",
-    age: 78,
-    condition: "Bilateral knee OA + A-fib + Hypertension",
-    avatar: "DW",
-    color: "#0D7377",
-    tagline: "The grandmother who brings her whole family into the ecosystem",
-    backstory: "Dorothy's hip has been hurting for months. Her daughter Sarah searches online and finds hippain.help. What happens next brings three generations into co-op.care.",
-    steps: [
-      { time: "Day 1", site: "hippain.help", siteUrl: "https://www.hippain.help", action: "Sarah searches 'hip pain help' for her mom", detail: "Finds hippain.help. Talks to Sage about Dorothy's symptoms. Sage asks smart questions about duration, severity, morning stiffness. Recommends seeing an orthopedic specialist." },
-      { time: "Day 1", site: "hippain.help", siteUrl: "https://www.hippain.help", agent: "Doctor Visit Companion", action: "Prepares doctor visit card", detail: "Sarah fills out the symptom picker: bilateral knee OA, 6+ months, severity 7/10. Generates a printable card with questions to ask the orthopedic surgeon." },
-      { time: "Day 1", site: "hippain.help", siteUrl: "https://www.hippain.help", agent: "NPI Specialist Finder", action: "Finds Dr. Chen in Boulder", detail: "Searches NPI database for orthopedic surgeons in Boulder, CO. Finds Dr. Lisa Chen, MD at Boulder Orthopedics. Click to call." },
-      { time: "Day 3", site: "hippain.help", siteUrl: "https://www.hippain.help", action: "Buys a TENS unit from product recommendations", detail: "The site recommended a TENS unit ($35, HSA-eligible). Sarah buys it on Amazon. Sees 'Save 28-36% with HSA via ComfortCard' badge.", savings: "$10.50" },
-      { time: "Day 7", site: "comfortcard.org", siteUrl: "https://www.comfortcard.org", action: "Creates Dorothy's ComfortCard", detail: "Sarah creates a ComfortCard for Dorothy. Connects via MyChart (FHIR pull): meds, allergies, conditions auto-populate. Then Sage asks the human questions: 'What makes Dorothy feel safe? Who speaks for her?'", },
-      { time: "Day 7", site: "comfortcard.org", siteUrl: "https://www.comfortcard.org", action: "Records the doctor visit", detail: "After seeing Dr. Chen: diagnosis is bilateral knee OA, grade 3. PT 2x/week recommended. Sarah records this in the Doctor Visit Companion. Saved to Dorothy's ComfortCard." },
-      { time: "Day 10", site: "co-op.care", siteUrl: "https://www.co-op.care", action: "Sarah discovers co-op.care membership", detail: "The ComfortCard footer links to co-op.care. Sarah sees: $59/mo includes companion care, HSA savings, caregiver matching. The HSA calculator shows $936/yr in savings. The membership pays for itself.", savings: "$936/yr" },
-      { time: "Day 14", site: "co-op.care", siteUrl: "https://www.co-op.care", agent: "LMN Generator", action: "Josh Emdur DO generates an LMN", detail: "Josh reviews Dorothy's conditions (knee OA + A-fib + HTN) and signs a Letter of Medical Necessity. Dorothy's companion care, PT exercises, and TENS unit are now HSA-eligible.", revenue: "$199", savings: "$936/yr" },
-      { time: "Day 21", site: "co-op.care", siteUrl: "https://www.co-op.care", agent: "Caregiver Match", action: "Maria Santos assigned as caregiver", detail: "Maria is a W-2 caregiver-owner earning $28/hr + equity. She starts 3x/week: medication management, PT exercises, walks with Biscuit. She teaches Tuesday yoga too." },
-      { time: "Day 30", site: "comfortcard.org", siteUrl: "https://www.comfortcard.org", action: "Dorothy's ComfortCard saves her in the ER", detail: "Dorothy falls at home. Paramedic scans her ComfortCard QR code from Apple Wallet. Sees allergies (Penicillin - anaphylaxis), meds (Eliquis - blood thinner), emergency contact (Sarah). 2-second access. No login needed." },
-      { time: "Month 3", site: "surgeonvalue.com", siteUrl: "https://www.surgeonvalue.com", agent: "Wonder Bill", action: "Dr. Chen captures $4,200 in missed revenue", detail: "Dr. Chen installs the SurgeonValue connector. Wonder Bill scans her panel: Dorothy qualifies for RTM ($56/mo), CCM ($64/mo), and PCM. Three codes she wasn't billing. Across her panel of 250 patients: $240K/yr in missed revenue.", revenue: "$4,200/yr" },
-      { time: "Christmas", site: "comfortcard.org", siteUrl: "https://www.comfortcard.org", action: "Sarah gives the grandkids ComfortCard gifts", detail: "Sarah buys ComfortCard Christmas gifts for Dorothy's grandkids. Each gift opens a Trump Account ($500) + a ComfortCard with allergies and emergency info + a recorded story from Dorothy via Sage. The $500 grows to $12,000 by the time they need hip surgery.", savings: "$12,000+" },
-    ],
-    outcome: { revenue: "$4,399+", savings: "$13,946+", timespan: "One year" },
-  },
-  {
     id: "levonti",
     name: "Dr. Levonti Ohanessian",
     age: 38,
@@ -157,7 +132,7 @@ function StepCard({ step, index, color }: { step: JourneyStep; index: number; co
 /* ─── Page ─── */
 
 export default function DemoPage() {
-  const [selectedId, setSelectedId] = useState("dorothy");
+  const [selectedId, setSelectedId] = useState("levonti");
   const journey = JOURNEYS.find((j) => j.id === selectedId) || JOURNEYS[0];
 
   return (
