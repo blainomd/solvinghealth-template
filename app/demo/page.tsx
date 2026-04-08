@@ -176,7 +176,7 @@ export default function DemoPage() {
           Watch the ecosystem work.
         </h1>
         <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
-          Three digital twins. Three journeys. Every site, every agent, every dollar — connected.
+          Real surgeons. Real revenue. See exactly how Wonder Bill finds the money you earned.
         </p>
         <JourneySelector journeys={JOURNEYS} selected={selectedId} onSelect={setSelectedId} />
       </section>
