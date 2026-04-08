@@ -112,16 +112,7 @@ function DifferentiatorIcon({ icon }: { icon: string }) {
 /* ─── Page Component ──────────────────────────────────────────────── */
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Replace with your email capture endpoint
-    console.log("Email captured:", email);
-    setSubmitted(true);
-    setEmail("");
-  };
+  // No email capture — all CTAs are direct actions
 
   const mcpSnippet = `{
   "mcpServers": {
@@ -405,41 +396,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Email Capture ──────────────────────────────────────── */}
+      {/* ── Explore the Ecosystem ──────────────────────────────── */}
       <section className="py-20">
         <div className="max-w-xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: siteConfig.accentColor }}>
-            Stay informed
+            Explore the ecosystem
           </h2>
           <p className="text-gray-500 mb-8">
-            Get evidence-based updates on {siteConfig.name.toLowerCase()}. No spam. Unsubscribe anytime.
+            25 sites. One health system. Built entirely with AI.
           </p>
-          {submitted ? (
-            <div className="p-6 rounded-2xl bg-green-50 border border-green-200">
-              <p className="text-green-800 font-semibold">Thank you. We will be in touch.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                required
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-5 py-4 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:border-transparent"
-                style={
-                  { "--tw-ring-color": siteConfig.primaryColor } as React.CSSProperties
-                }
-              />
-              <button
-                type="submit"
-                className="px-8 py-4 rounded-xl text-white font-bold transition-all hover:opacity-90 hover:scale-105"
-                style={{ backgroundColor: siteConfig.primaryColor }}
-              >
-                Subscribe
-              </button>
-            </form>
-          )}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="https://www.co-op.care" className="px-8 py-4 rounded-xl text-white font-bold transition-all hover:opacity-90 hover:scale-105" style={{ backgroundColor: siteConfig.primaryColor }}>
+              For Families
+            </a>
+            <a href="https://www.surgeonvalue.com" className="px-8 py-4 rounded-xl font-bold border-2 transition-all hover:opacity-90" style={{ borderColor: siteConfig.primaryColor, color: siteConfig.primaryColor }}>
+              For Surgeons
+            </a>
+          </div>
         </div>
       </section>
 
