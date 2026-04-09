@@ -132,18 +132,18 @@ export default function Home() {
       <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <HeartPulseIcon className="w-8 h-8" />
+            <img src="/icon.svg" alt={siteConfig.name} className="w-9 h-9 rounded-md" />
             <span className="text-lg font-bold" style={{ color: siteConfig.accentColor }}>
               {siteConfig.name}
             </span>
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="#connector"
+              href="/interpret"
               className="hidden sm:inline-flex items-center text-sm font-medium transition-colors hover:opacity-80"
               style={{ color: siteConfig.primaryColor }}
             >
-              Get the connector
+              Upload a report
               <ArrowIcon />
             </a>
             <a
