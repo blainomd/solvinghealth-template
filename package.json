@@ -12,7 +12,8 @@
     "next": "16.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@vercel/analytics": "^1.5.0"
+    "@vercel/analytics": "^1.5.0",
+    "@supabase/supabase-js": "^2.49.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",

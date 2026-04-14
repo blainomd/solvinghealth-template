@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { siteConfig } from "@/site.config";
+import { RefTracker } from "@/components/RefTracker";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -42,6 +43,16 @@ export default function RootLayout({
           src={`https://www.solvinghealth.com/widgets/gemini-voice.js?site=${siteConfig.voiceSite}`}
           strategy="lazyOnload"
         />
+
+        {/* Referral invite widget — renders if user is logged in */}
+        <Script
+          src="https://solvinghealth.com/referral-widget.js"
+          strategy="lazyOnload"
+          id="sh-referral-widget"
+        />
+
+        {/* Tracks ?ref=CODE cookie and fires conversion on checkout */}
+        <RefTracker />
 
         <Analytics />
       </body>
