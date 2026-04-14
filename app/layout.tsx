@@ -54,6 +54,13 @@ export default function RootLayout({
         {/* Tracks ?ref=CODE cookie and fires conversion on checkout */}
         <RefTracker />
 
+        {/* Universal ecosystem footer bar — Surf + legal + presence */}
+        <Script
+          src="https://www.solvinghealth.com/footer.js"
+          strategy="lazyOnload"
+          id="sh-footer-bar"
+        />
+
         <Analytics />
       </body>
     </html>
