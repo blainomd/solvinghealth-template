@@ -56,7 +56,7 @@ export default function RootLayout({
 
         {/* Universal ecosystem footer bar — Surf + legal + presence */}
         <Script
-          src="https://www.solvinghealth.com/footer.js"
+          src="https://harnesshealth.ai/footer.js"
           strategy="lazyOnload"
           id="sh-footer-bar"
         />

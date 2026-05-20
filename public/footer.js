@@ -1,12 +1,12 @@
 /**
  * SolvingHealth Ecosystem Bar v7
- * https://solvinghealth.com/footer.js
+ * https://harnesshealth.ai/footer.js
  *
  * THE ONLY BOTTOM BAR. Replaces separate Sage chat + Gemini voice widgets.
  * One bar: [voice] [story + CTA] [Surf ->] [chat] [legal]
  *
  * Usage:
- *   <script src="https://solvinghealth.com/footer.js"
+ *   <script src="https://harnesshealth.ai/footer.js"
  *     data-brand="co-op.care" data-theme="light" defer></script>
  *
  * Remove sage-chat.js, gemini-voice.js, chat-widget.js, voice-embed.js
