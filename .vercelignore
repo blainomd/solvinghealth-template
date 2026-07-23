@@ -1,0 +1,12 @@
+# Never ship working notes or secrets — .gitignore does NOT govern the Vercel CLI upload
+wiki/
+notes/
+drafts/
+_drafts/
+scratch/
+CLAUDE.md
+.env
+.env.*
+*.key
+*.pem
+.DS_Store
