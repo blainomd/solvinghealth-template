@@ -40,4 +40,4 @@ Everything on the site reads from `site.config.ts`. Change the name, colors, sec
 
 ## License
 
-MIT
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
