@@ -145,10 +145,10 @@ var leads = {
     {msg:'Physician-supervised AI. HIPAA compliant. Your data stays yours.',cta:'Learn how',href:'https://solvinghealth.com/privacy'}
   ],
   'opusocial':[
-    {msg:'Stop paying scalpers. Buy from fans going to the same show.',cta:'Find tickets',href:'https://opusocial.com'},
-    {msg:'Your Spotify history already knows which shows you\'d love.',cta:'Connect Spotify',href:'https://opusocial.com'},
-    {msg:'ReadyPin: tap in, tap out. No app download needed at the door.',cta:'Learn more',href:'https://opusocial.com/readypin'},
-    {msg:'Your browsing builds your music identity.',cta:'Get chanio',href:'https://chanio.com'}
+    {msg:'You belong to what you show up for.',cta:'Find your room',href:'https://opusocial.com'},
+    {msg:'Face-value tickets, fan to fan — never above face.',cta:'Find tickets',href:'https://opusocial.com/tickets'},
+    {msg:'No score. No leaderboard. Just proof you showed up.',cta:'Keep the record',href:'https://opusocial.com'},
+    {msg:'Shared taste, real company — who else loves what you love?',cta:'Find kindred',href:'https://opusocial.com/kindred'}
   ],
   'sh-room':[
     {msg:'Grow your own lion\'s mane. Whisper-quiet. Two-minute setup.',cta:'Back on Kickstarter',href:'#tiers'},
