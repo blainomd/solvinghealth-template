@@ -21,3 +21,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Print only the visit list (the nectar). Everything else carries print:hidden. */
+@media print {
+  body { background: #fff; }
+  #visit { padding: 0; background: #fff; }
+  #visit-list { border: none; padding: 0; }
+}
